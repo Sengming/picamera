@@ -21,8 +21,9 @@ class UartSubscriber(IStreamSubscriber):
         '''
         Prints out byte data to stdout for debug purposes
         '''
-#         if (self.__canOutputData):
+#         if self.__canOutputData is True:
 #             print(data)
+        return
         
     def allowOutput(self):
         self.__canOutputData = True
